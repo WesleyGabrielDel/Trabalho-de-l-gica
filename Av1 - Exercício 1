@@ -1,0 +1,24 @@
+Iníco
+  Escreva("Digite o primeiro número\n")
+  Leia num1
+  Escreva("Digite o segundo número\n")
+  Leia  num2
+  Escreva("Digite a operação de acordo com a tabela abaixo\n")
+  Escreva("Adição - 1\n Subtração - 2\n Divisão - 3\n Multiplicação - 4\n")
+  Leia operação
+  Se operação == 1 faça
+    Conta = num1 + num2
+    Escreva("O resultado da adição é: ", Conta)
+
+  Se senão operação == 2
+    Conta = num1 - num2
+    Escreva("O resultado da subtração é: ", Conta)
+
+  Se senão operação == 3
+    Conta = num1 / num2
+    Escreva("O resultado da divisão é: ", Conta)
+
+  Se senão operação == 4
+    Conta = num1 * num2
+    Escreva("O resultado da multiplicação é: ", Conta)
+  Fimse
