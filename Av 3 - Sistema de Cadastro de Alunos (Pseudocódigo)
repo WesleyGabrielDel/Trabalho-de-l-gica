@@ -1,0 +1,19 @@
+Iníco 
+  Escreva("De acordo com a tabela, digite o que deseja fazer:\n")
+  Escreva("Cadastrar aluno - 1 \n Verificar informações - 2 \n Remover um aluno - 3 \n")
+  Leia resposta
+
+  Se resposta == 1 
+    Escreva("Qual o número da matrícula do aluno: \n")
+    Leia numMatrícula
+    
+    Escreva("Digite o nome do aluno: \n")
+    Leia 
+    Escreva("Digite a idade do aluno: \n")
+    Leia idadeAluno
+    Escreva("Qual a data de nascimento do aluno? \n")
+    Leia dataNascimento
+    Escreva("O que o aluno está cursando? \n")
+    Leia cursoAluno
+
+    
