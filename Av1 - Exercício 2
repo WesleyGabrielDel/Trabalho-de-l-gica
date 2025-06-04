@@ -1,0 +1,9 @@
+Início 
+  Escreva("Digite sua idade:\n")
+  Leia idade 
+  Se idade >= 18 faça
+    Escreva("Você é maior de idade!")
+  Senão 
+    Escreva("Você é menor de idade!")
+  Fimse
+Fim
