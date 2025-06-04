@@ -1,0 +1,16 @@
+Iníco 
+  Escreva("Digite o primeiro número")
+  Leia num1
+  Escreva("Digite o segundo número")
+  Leia num2
+  Escreva("Digite o terceiro número")
+  Leia num3
+  maior = num1
+
+  Se num2 > num3 faça
+    maior = num2
+
+  Se senão num3 > num2 faça
+    maior = num3
+  Fimse
+Fim
