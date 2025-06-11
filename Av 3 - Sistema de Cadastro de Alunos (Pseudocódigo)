@@ -1,19 +1,44 @@
 Iníco 
-  Escreva("De acordo com a tabela, digite o que deseja fazer:\n")
-  Escreva("Cadastrar aluno - 1 \n Verificar informações - 2 \n Remover um aluno - 3 \n")
-  Leia resposta
+  Enquanto Sair == False então
+    Escreva("De acordo com a tabela, digite o que deseja fazer: \n")
+    Escreva("Cadastrar aluno - 1 \n Verificar informações - 2 \n Remover um aluno - 3 \n Sair do programa - 4 \n")
+    Leia resposta
 
-  Se resposta == 1 
-    Escreva("Qual o número da matrícula do aluno: \n")
-    Leia numMatrícula
-    
-    Escreva("Digite o nome do aluno: \n")
-    Leia 
-    Escreva("Digite a idade do aluno: \n")
-    Leia idadeAluno
-    Escreva("Qual a data de nascimento do aluno? \n")
-    Leia dataNascimento
-    Escreva("O que o aluno está cursando? \n")
-    Leia cursoAluno
+    Se resposta == 1 
 
-    
+      Escreva("Qual o número da matrícula do aluno: \n")
+      Leia numMatrícula
+      Escreva("Digite o nome do aluno: \n")
+      Leia  nomeAluno[numMatrícula]
+      Escreva("Digite a idade do aluno: \n")
+      Leia idadeAluno[numMatrícula]
+      Escreva("Qual a data de nascimento do aluno? \n")
+      Leia dataNascimento[numMatrícula]
+      Escreva("O que o aluno está cursando? \n")
+      Leia cursoAluno[numMatrícula]
+      Escreva("Matrícula Concluída!")
+
+    Se resposta == 2
+
+      Escreva("Digite o número da matrícula do aluno: \n")
+      Leia matrículaVerfic
+      Escreva("Nome do aluno: ", nomeAluno[matrículaVerfic])
+      Escreva("Idade do aluno: ", idadeAluno[matrículaVerfic])
+      Escreva("Data de nascimento do aluno: ", dataNascimento[matrículaVerfic])
+      Escreva("Curso do aluno: ", cursoAluno[matrículaVerfic])
+      matrículaVerific = 0;
+
+    Se resposta == 3
+
+      Escreva("Informe o número da matrícula do aluno: \n")
+      Leia matrículaVerfic
+      Remover nomeAluno[matrículaVerfic]
+      Remover idadeAluno[matrículaVerfic]
+      Remover dataNascimento[matrículaVerfic]
+      Remover cursoAluno[matrículaVerfic]
+
+    Se resposta == 4 
+      Sair = True
+
+  Fimenquanto
+Fim
